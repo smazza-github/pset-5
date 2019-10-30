@@ -72,7 +72,7 @@ Given two strings, determine whether or not `target` is equivalent to the middle
 
 ### Exercise 5
 
-Given a string and a character, compute the number of words that end in suffix. Return `-1` if any of the following requirements are not met.
+Given a string and a character, compute the number of words that end in `suffix`. Return `-1` if any of the following requirements are not met.
 
 * `text` must not be `null`.
 * `suffix` must be a character in the English alphabet.
@@ -81,7 +81,7 @@ Treat the `suffix` case-sensitively. A word is defined as a sequence of characte
 
 ### Exercise 6
 
-Given a string, compute the number of triplets in text. Return `-1` if any of the following requirements are not met.
+Given a string, compute the number of triplets in `text`. Return `-1` if any of the following requirements are not met.
 
 * `text` must not be `null`.
 
@@ -89,7 +89,7 @@ A triplet is defined as the appearance of three consecutive characters (i.e., "a
 
 ### Exercise 7
 
-Given a string, compute the sum of the digits in text. Return `-1` if any of the following requirements are not met.
+Given a string, compute the sum of the digits in `text`. Return `-1` if any of the following requirements are not met.
 
 * `text` must not be `null`.
 
@@ -105,7 +105,7 @@ A sequence is defined as one or more consecutive characters. These characters mu
 
 ### Exercise 9
 
-Given two strings, return a new string built by intertwining each of the characters of a and b. Return `null` if any of the following requirements are not met.
+Given two strings, return a new string built by intertwining each of the characters of `a` and `b`. Return `null` if any of the following requirements are not met.
 
 * `a` must not be `null`.
 * `b` must not be `null`.
