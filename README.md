@@ -47,7 +47,7 @@ Given two strings, return a new string built by surrounding `in` with the first 
 * `out` must be exactly 4 characters.
 
 ```
-surroundMe("cde", "abfg") → abcdefg
+surroundMe("cde", "abfg") → "abcdefg"
 surroundMe(null, "####")  → null
 surroundMe("abc", null)   → "abc"
 surroundMe("abc", "123")  → "abc"
@@ -184,7 +184,7 @@ Given two strings, return a new string built by intertwining each of the charact
 
 ```
 sequence("aceg", "bdfh") → "abcdefgh"
-sequence("abc", "12345") → a1b2c345"
+sequence("abc", "12345") → "a1b2c345"
 sequence(null, "abcd")   → null
 sequence("abcd", null)   → null
 sequence(null, null)     → null
