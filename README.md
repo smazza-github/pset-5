@@ -64,7 +64,7 @@ Given a string and an integer, return a new string that represents the first and
 * `n` must be a positive integer between 1 and the length of `text` (inclusive).
 
 ```
-endsMeet("abcdefg", 2) → "abcdefg"
+endsMeet("abcdefg", 2) → "abfg"
 endsMeet(null, 2)      → null
 endsMeet("", 2)        → ""
 endsMeet("abc", -1)    → "abc"
