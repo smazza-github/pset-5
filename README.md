@@ -203,7 +203,7 @@ A palindrome is case-sensitive. Use of the `StringBuilder` or `StringBuffer` cla
 ```
 isPalindrome("racecar") → true
 isPalindrome("Madam")   → false
-isPalindrome(null))     → false
+isPalindrome(null)      → false
 ```
 
 Remember, your code will need to handle atypical cases, too. `null` values, empty `String`s, and special characters (including escape sequences) are all valid inputs.
