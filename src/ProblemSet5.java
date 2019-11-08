@@ -52,13 +52,18 @@ public class ProblemSet5 {
           // System.out.println(ps.countMe(null, 'a'));
           // System.out.println(ps.countMe("abc$ def$", '$'));
 
-        // Exerise 6
+        // Exercise 6
           // System.out.println(ps.triplets("aaabbbccc"));
           // System.out.println(ps.triplets("aaaa"));
           // System.out.println(ps.triplets("abc"));
           // System.out.println(ps.triplets(null));
 
-        
+        // Exercise 7
+          // System.out.println(ps.addMe("123 abc 123"));
+          // System.out.println(ps.addMe("abcdefghijk"));
+          // System.out.println(ps.addMe(null));
+
+
     }
 
     /*
@@ -173,7 +178,7 @@ public class ProblemSet5 {
 
           return false;
 
-
+///////////////////////////////////////////////////////
 
         } else if (target == null) {
 
@@ -183,8 +188,7 @@ public class ProblemSet5 {
 
           return false;
 
-
-
+///////////////////////////////////////////////////////
 
         } else {
 
@@ -218,6 +222,8 @@ public class ProblemSet5 {
         return -1;
 
       } else {
+
+///////////////////////////////////////////////////////
 
         String [] wordArray = text.spit(" ");
           for (String word : wordArray) {
@@ -271,6 +277,25 @@ public class ProblemSet5 {
 
     public long addMe(String text) {
 
+      long total = 0
+
+      if (text == null) {
+
+        return -1;
+
+      } else {
+
+          for (int i = 0; i != text.length(); i++) {
+            char number = text.charAt(i);
+
+            if (Character.isDigit(number)) {
+              total += Character.getNumericValue(text.charAt(i));
+            }
+          }
+
+          return sum;
+
+      }
     }
 
     /*
