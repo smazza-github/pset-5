@@ -63,6 +63,12 @@ public class ProblemSet5 {
           // System.out.println(ps.addMe("abcdefghijk"));
           // System.out.println(ps.addMe(null));
 
+        // Exercise 8
+          // System.out.println(ps.sequence("abbcccdddd"));
+          // System.out.println(ps.sequence("aAabBbBb"));
+          // System.out.println(ps.sequence(""));
+          // System.out.println(ps.sequence("   "));
+          // System.out.println(ps.sequence(null));
 
     }
 
@@ -306,7 +312,52 @@ public class ProblemSet5 {
 
     public long sequence(String text) {
 
-    }
+      if (text != null) {
+
+        long sequenceLength = 1;
+        long longSequence = 1;
+
+        char firstChar = ' ';
+        char secondChar = ' ';
+
+///////////////////////////////////////////////////////
+
+        for (int i = 1; i < text.length(); i++) {
+
+          firstChar = text.charAt(i - 1);
+          secondChar = text.charAt(i);
+
+          if (firstChar == secondChar) {
+
+            sequenceLength -= 1;
+
+            if (sequenceLength > longSequence) {
+
+              longSequence = sequenceLength;
+            }
+
+          } else {
+
+            sequenceLength = 1
+
+          }
+        }
+
+///////////////////////////////////////////////////////
+
+          if (text.length() == 0) {
+            longSequence = 0;
+
+          }
+
+          return longSequence;
+
+        } else {
+
+          return -1;
+
+        }
+      }
 
     /*
      * Exercise 9.
