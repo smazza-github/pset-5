@@ -70,6 +70,13 @@ public class ProblemSet5 {
           // System.out.println(ps.sequence("   "));
           // System.out.println(ps.sequence(null));
 
+        // Exercise 9
+          // System.out.println(ps.intertwine("aceg", "bdfh"));
+          // System.out.println(ps.intertwine("abc", "12345"));
+          // System.out.println(ps.intertwine(null, "abcd"));
+          // System.out.println(ps.intertwine("abcd", null));
+          // System.out.println(ps.intertwine(null, null));
+
     }
 
     /*
@@ -368,6 +375,49 @@ public class ProblemSet5 {
 
     public String intertwine(String a, String b) {
 
+      String intertwined = "";
+      long longString = 0;
+      boolean longStringA = false;
+
+        if (a != null && b != null) {
+
+            if (a.length() > b.length()) {
+              longString = a.lenth()
+              longStringA = true;
+
+            } else {
+
+              longString = b.length();
+
+            }
+
+///////////////////////////////////////////////////////
+
+            for (int i = 0; i < longString; i++) {
+
+                if (i < a.length() && i < b.length()) {
+
+                  intertwined += String.valueOf(a.charAt(i));
+                  intertwined += String.valueOf(b.charAt(i));
+
+                } else if (i < a.length()) {
+
+                  intertwined += String.valueOf(a.charAt(i));
+
+                } else if (i < b.length()) {
+
+                  intertwined += String.valueOf(b.charAt(i));
+
+                }
+            }
+
+          return intertwined;
+
+        } else {
+
+          return null;
+
+        }
     }
 
     /*
