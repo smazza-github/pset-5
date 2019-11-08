@@ -28,7 +28,10 @@ public class ProblemSet5 {
           // System.out.println(ps.surroundMe("abc", "123"));
 
         // Exercise 2
-
+          // System.out.println(ps.endsMeet("abcdefg", 2));
+          // System.out.println(ps.endsMeet(null, 2));
+          // System.out.println(ps.endsMeet("", 2));
+          // System.out.println(ps.endsMeet("abc", -1));
     }
 
     /*
@@ -70,6 +73,25 @@ public class ProblemSet5 {
 
     public String endsMeet(String text, int n) {
 
+      String outputString2 = text;
+        if (text == null) {
+
+          return text;
+
+        } else if (text.length() < 1 || text.length() > 10) {
+
+          return text;
+
+        } else if (n < 1 || n > text.length()) {
+
+          return text;
+
+        } else {
+
+          outputString2 = text.substring(0, n) + text.substring(text.length() - n, text.length());
+          return outputString2;
+
+        }
     }
 
     /*
