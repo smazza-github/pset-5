@@ -38,6 +38,14 @@ public class ProblemSet5 {
           // System.out.println(ps.middleMan(null));
           // System.out.println(ps.middleMan("12"));
           // System.out.println(ps.middleMan("a"));
+
+        // Exercise 4
+          // System.out.println(ps.isCentered("abcdefg", "cde"));
+          // System.out.println(ps.isCentered("abcdefg", "abc"));
+          // System.out.println(ps.isCentered(null, "abc"));
+          // System.out.println(ps.isCentered("abcd", "abc"));
+          // System.out.println(ps.isCentered("abc", null));
+          // System.out.println(ps.isCentered("abcdefg", "cd"));
     }
 
     /*
@@ -137,7 +145,45 @@ public class ProblemSet5 {
      */
 
     public boolean isCentered(String text, String target) {
+      ProblemSet5 ps = new ProblemSet5 ();
 
+        if (text == null) {
+
+          return false;
+
+        } else if (text.length() < 3) {
+
+          return false;
+
+        } else if (text.length() % 2 == 0) {
+
+          return false;
+
+
+          
+        } else if (target == null) {
+
+          return false;
+
+        } else if (target.length() != 3) {
+
+          return false;
+
+
+
+
+        } else {
+
+          if (ps.middleMan(text).equals(target)) {
+
+            return true;
+
+          } else {
+
+            return false;
+
+          }
+        }
     }
 
     /*
