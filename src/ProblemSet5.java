@@ -46,6 +46,11 @@ public class ProblemSet5 {
           // System.out.println(ps.isCentered("abcd", "abc"));
           // System.out.println(ps.isCentered("abc", null));
           // System.out.println(ps.isCentered("abcdefg", "cd"));
+
+        // Exercise 5
+          // System.out.println(ps.countMe("I am an example sentence", 'e'));
+          // System.out.println(ps.countMe(null, 'a'));
+          // System.out.println(ps.countMe("abc$ def$", '$'));
     }
 
     /*
@@ -145,6 +150,7 @@ public class ProblemSet5 {
      */
 
     public boolean isCentered(String text, String target) {
+
       ProblemSet5 ps = new ProblemSet5 ();
 
         if (text == null) {
@@ -160,7 +166,7 @@ public class ProblemSet5 {
           return false;
 
 
-          
+
         } else if (target == null) {
 
           return false;
@@ -193,7 +199,31 @@ public class ProblemSet5 {
      */
 
     public int countMe(String text, char suffix) {
+      int count = 0;
 
+      if (text == null) {
+
+        return -1;
+
+      } else if ((suffix >= 'A' && suffix <= 'Z') || (!(suffix >= 'a' && suffix <= 'z'))) {
+
+        return -1;
+
+      } else {
+
+        String [] wordArray = text.spit(" ");
+          for (String word : wordArray) {
+
+            String lastChar = String.valueOf(word.charAt(word.length()-1));
+
+            if (lastChar.equals(String.valueOf(suffix))) {
+                count++;
+            }
+          }
+
+          return count;
+
+      }
     }
 
     /*
