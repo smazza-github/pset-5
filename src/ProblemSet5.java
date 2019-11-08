@@ -22,25 +22,25 @@ public class ProblemSet5 {
         ProblemSet5 ps = new ProblemSet5();
 
         // Exercise 1
-          // System.out.println(ps.surroundMe("cde", "abfg"));
+          System.out.println(ps.surroundMe("cde", "abfg"));
           // System.out.println(ps.surroundMe(null, "####"));
           // System.out.println(ps.surroundMe("abc", null));
           // System.out.println(ps.surroundMe("abc", "123"));
 
         // Exercise 2
-          // System.out.println(ps.endsMeet("abcdefg", 2));
+          System.out.println(ps.endsMeet("abcdefg", 2));
           // System.out.println(ps.endsMeet(null, 2));
           // System.out.println(ps.endsMeet("", 2));
           // System.out.println(ps.endsMeet("abc", -1));
 
         // Exercise 3
-          // System.out.println(ps.middleMan("abcdefg"));
+          System.out.println(ps.middleMan("abcdefg"));
           // System.out.println(ps.middleMan(null));
           // System.out.println(ps.middleMan("12"));
           // System.out.println(ps.middleMan("a"));
 
         // Exercise 4
-          // System.out.println(ps.isCentered("abcdefg", "cde"));
+          System.out.println(ps.isCentered("abcdefg", "cde"));
           // System.out.println(ps.isCentered("abcdefg", "abc"));
           // System.out.println(ps.isCentered(null, "abc"));
           // System.out.println(ps.isCentered("abcd", "abc"));
@@ -48,37 +48,37 @@ public class ProblemSet5 {
           // System.out.println(ps.isCentered("abcdefg", "cd"));
 
         // Exercise 5
-          // System.out.println(ps.countMe("I am an example sentence", 'e'));
+          System.out.println(ps.countMe("I am an example sentence", 'e'));
           // System.out.println(ps.countMe(null, 'a'));
           // System.out.println(ps.countMe("abc$ def$", '$'));
 
         // Exercise 6
-          // System.out.println(ps.triplets("aaabbbccc"));
+          System.out.println(ps.triplets("aaabbbccc"));
           // System.out.println(ps.triplets("aaaa"));
           // System.out.println(ps.triplets("abc"));
           // System.out.println(ps.triplets(null));
 
         // Exercise 7
-          // System.out.println(ps.addMe("123 abc 123"));
+          System.out.println(ps.addMe("123 abc 123"));
           // System.out.println(ps.addMe("abcdefghijk"));
           // System.out.println(ps.addMe(null));
 
         // Exercise 8
-          // System.out.println(ps.sequence("abbcccdddd"));
+          System.out.println(ps.sequence("abbcccdddd"));
           // System.out.println(ps.sequence("aAabBbBb"));
           // System.out.println(ps.sequence(""));
           // System.out.println(ps.sequence("   "));
           // System.out.println(ps.sequence(null));
 
         // Exercise 9
-          // System.out.println(ps.intertwine("aceg", "bdfh"));
+          System.out.println(ps.intertwine("aceg", "bdfh"));
           // System.out.println(ps.intertwine("abc", "12345"));
           // System.out.println(ps.intertwine(null, "abcd"));
           // System.out.println(ps.intertwine("abcd", null));
           // System.out.println(ps.intertwine(null, null));
 
         // Exercise 10
-          // System.out.println(ps.isPalindrome("racecar"));
+          System.out.println(ps.isPalindrome("racecar"));
           // System.out.println(ps.isPalindrome("Madam"));
           // System.out.println(ps.isPalindrome(null));
     }
@@ -242,7 +242,7 @@ public class ProblemSet5 {
 
 ///////////////////////////////////////////////////////
 
-        String [] wordArray = text.spit(" ");
+        String [] wordArray = text.split(" ");
           for (String word : wordArray) {
 
             String lastChar = String.valueOf(word.charAt(word.length()-1));
@@ -275,7 +275,7 @@ public class ProblemSet5 {
 
           for (int i = 0; i < text.length() - 2; i++) {
 
-            if (text.charAt(i) ++ text.charAt(i + 2) && text.charAt(i) == text.charAt(i + 1)) {
+            if (text.charAt(i) == text.charAt(i + 2) && text.charAt(i) == text.charAt(i + 1)) {
               tripletCount++;
 
             }
@@ -294,7 +294,7 @@ public class ProblemSet5 {
 
     public long addMe(String text) {
 
-      long total = 0
+      long total = 0;
 
       if (text == null) {
 
@@ -310,7 +310,7 @@ public class ProblemSet5 {
             }
           }
 
-          return sum;
+          return total;
 
       }
     }
@@ -349,7 +349,7 @@ public class ProblemSet5 {
 
           } else {
 
-            sequenceLength = 1
+            sequenceLength = 1;
 
           }
         }
@@ -386,7 +386,7 @@ public class ProblemSet5 {
         if (a != null && b != null) {
 
             if (a.length() > b.length()) {
-              longString = a.lenth()
+              longString = a.length();
               longStringA = true;
 
             } else {
@@ -438,7 +438,7 @@ public class ProblemSet5 {
         if (text != null) {
 
           for (int i = text.length() - 1; i >= 0; i--) {
-            plaindrome +- String.valueOf(text.charAt(i));
+            palindrome += String.valueOf(text.charAt(i));
           }
 
           if (text.equals(palindrome)) {
