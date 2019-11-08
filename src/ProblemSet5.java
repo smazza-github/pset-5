@@ -51,6 +51,14 @@ public class ProblemSet5 {
           // System.out.println(ps.countMe("I am an example sentence", 'e'));
           // System.out.println(ps.countMe(null, 'a'));
           // System.out.println(ps.countMe("abc$ def$", '$'));
+
+        // Exerise 6
+          // System.out.println(ps.triplets("aaabbbccc"));
+          // System.out.println(ps.triplets("aaaa"));
+          // System.out.println(ps.triplets("abc"));
+          // System.out.println(ps.triplets(null));
+
+        
     }
 
     /*
@@ -234,6 +242,25 @@ public class ProblemSet5 {
 
     public int triplets(String text) {
 
+      int tripletCount = 0;
+
+      if (text == null) {
+
+        return -1;
+
+      } else {
+
+          for (int i = 0; i < text.length() - 2; i++) {
+
+            if (text.charAt(i) ++ text.charAt(i + 2) && text.charAt(i) == text.charAt(i + 1)) {
+              tripletCount++;
+
+            }
+          }
+
+        return tripletCount;
+
+      }
     }
 
     /*
