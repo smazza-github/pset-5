@@ -32,6 +32,12 @@ public class ProblemSet5 {
           // System.out.println(ps.endsMeet(null, 2));
           // System.out.println(ps.endsMeet("", 2));
           // System.out.println(ps.endsMeet("abc", -1));
+
+        // Exercise 3
+          // System.out.println(ps.middleMan("abcdefg"));
+          // System.out.println(ps.middleMan(null));
+          // System.out.println(ps.middleMan("12"));
+          // System.out.println(ps.middleMan("a"));
     }
 
     /*
@@ -102,6 +108,25 @@ public class ProblemSet5 {
 
     public String middleMan(String text) {
 
+      String outputString3 = text;
+        if (text == null) {
+
+          return text;
+
+        } else if (text.length() < 3) {
+
+          return text;
+
+        } else if (text.length() % 2 == 0) {
+
+          return text;
+
+        } else {
+
+          outputString3 = (text.substring((int) Math.ceil(text.length() / 2) - 1, (int) Math.ceil (text.length() / 2 ) + 2));
+          return outputString3;
+
+        }
     }
 
     /*
