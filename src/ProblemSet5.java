@@ -77,6 +77,10 @@ public class ProblemSet5 {
           // System.out.println(ps.intertwine("abcd", null));
           // System.out.println(ps.intertwine(null, null));
 
+        // Exercise 10
+          // System.out.println(ps.isPalindrome("racecar"));
+          // System.out.println(ps.isPalindrome("Madam"));
+          // System.out.println(ps.isPalindrome(null));
     }
 
     /*
@@ -428,5 +432,26 @@ public class ProblemSet5 {
 
     public boolean isPalindrome(String text) {
 
+      String palindrome = "";
+      boolean isPalindrome = false;
+
+        if (text != null) {
+
+          for (int i = text.length() - 1; i >= 0; i--) {
+            plaindrome +- String.valueOf(text.charAt(i));
+          }
+
+          if (text.equals(palindrome)) {
+            isPalindrome = true;
+
+          }
+
+          return isPalindrome;
+
+        } else {
+
+          return false;
+
+        }
     }
 }
